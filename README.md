@@ -49,3 +49,32 @@ Symfony Docker is available under the MIT License.
 ## Credits
 
 Created by [Kévin Dunglas](https://dunglas.dev), co-maintained by [Maxime Helias](https://twitter.com/maxhelias) and sponsored by [Les-Tilleuls.coop](https://les-tilleuls.coop).
+
+
+##  Commandes utiles de MakerBundle
+
+Symfony MakerBundle permet de générer rapidement du code pour votre projet. Voici quelques commandes essentielles :
+
+##  Créer un contrôleur :
+php bin/console make:controller NomDuController:
+
+
+##  Créer une entité (table en base de données) :
+php bin/console make:entity NomDeLEntite
+
+
+##  Créer une migration pour la base de données :
+php bin/console make:migration
++++docker-compose exec php php bin/console make:migration+++
+
+
+##  Créer un formulaire :
+php bin/console make:form NomDuFormulaire
+
+
+##  Créer un utilisateur (avec sécurité) :
+php bin/console make:user
+
+
+##  Créer un CRUD complet :
+php bin/console make:crud NomDeLEntite
