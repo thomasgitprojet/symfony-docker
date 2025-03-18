@@ -78,3 +78,27 @@ php bin/console make:user
 
 ##  Créer un CRUD complet :
 php bin/console make:crud NomDeLEntite
+
+
+
+
+ Solution 2 : Faire un dépôt template GitHub (idéal pour plusieurs projets)
+Si tu veux réutiliser cette config souvent, crée un dépôt template sur GitHub.
+
+1️⃣ Convertir ton dépôt actuel en "template"
+Va sur GitHub dans ton dépôt public.
+Settings → Repository Template → Enable template repository
+2️⃣ Créer un nouveau projet basé sur ce template
+Va sur GitHub → New Repository
+Sélectionne "Choose a template" et choisis ton dépôt modèle.
+Coche "Private" pour que le dépôt soit privé.
+✅ Cette méthode est top car chaque projet n'est pas un fork mais commence avec la même config.
+
+
+## installion tailwind
+
+docker-compose exec php composer require symfony/webpack-encore-bundle
+docker-compose exec php npm install
+docker-compose exec php npm install -D tailwindcss postcss-loader autoprefixer
+docker-compose exec php npx tailwindcss init --full
+docker-compose exec php npm run dev

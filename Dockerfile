@@ -35,6 +35,8 @@ RUN set -eux; \
 		opcache \
 		zip \
 	;
+# Ajouter Node.js et npm
+RUN apt-get update && apt-get install -y nodejs npm
 
 # https://getcomposer.org/doc/03-cli.md#composer-allow-superuser
 ENV COMPOSER_ALLOW_SUPERUSER=1
